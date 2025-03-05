@@ -1,0 +1,24 @@
+.only-desktop{ 
+    display: none;
+}
+
+header{
+    
+    & nav{
+        display: flex;
+        gap: 2rem;
+    }
+
+    & nav:last-child{ 
+        overflow: scroll;
+    }
+
+    & nav::-webkit-scrollbar {
+        display: none;
+    }
+     
+    #secondary { 
+        overflow-x: auto; 
+        white-space: nowrap;  
+      }     
+}
