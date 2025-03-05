@@ -31,6 +31,30 @@ section header{
 
 .card{
     position: relative;
+}
+
+.card h2 {
+    display: -webkit-box;         /* Usando flexbox para limitar linhas */
+    -webkit-line-clamp: 2;        /* Limita o texto a quantidade de linhas posta */
+    -webkit-box-orient: vertical;  
+    overflow: hidden;              
+    text-overflow: ellipsis;       /* Coloca ... no limite desejado */
+}
+
+figure{
+    position: relative;
+}
+
+figure p {
+    display: -webkit-box;         /* Usando flexbox para limitar linhas */
+    -webkit-line-clamp: 2;        /* Limita o texto a quantidade de linhas posta */
+    -webkit-box-orient: vertical;  
+    overflow: hidden;              
+    text-overflow: ellipsis;       /* Coloca ... no limite desejado */
+}
+
+.card{
+    position: relative;
     border-radius: 4px;
     overflow: hidden;
     &::before{
