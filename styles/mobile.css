@@ -22,3 +22,34 @@ header{
         white-space: nowrap;  
       }     
 }
+
+.container{
+    padding-inline: 1rem;
+}
+
+main{ 
+
+    .grid {
+        grid-template-columns: 1fr;  
+      }
+
+    #featured{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column; 
+        justify-content: center;
+
+        & .card {
+            display: flex;
+            flex-direction: column;  
+            width: 100%;   
+            height: auto;   
+          
+            & img {
+              width: 100%;  
+              height: auto;   
+            }
+          }
+          
+    }
+}

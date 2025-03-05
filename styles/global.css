@@ -19,14 +19,14 @@
     --text-span: 600 14px/145% var(--font-family);
     --text: 400 16px/140% var(--font-family);
     --text-sm: 400 14px/160% var(--font-family);
-
+    overflow-x: hidden;
 }
 
 body{
     color: var(--text-color-primary);
     background-color: var(--bg-color);
     font: var(--text);
-    overflow: hidden;
+    overflow-x: hidden;
 }
 
 a{
