@@ -24,13 +24,17 @@ header{
 
 .container{
     padding-inline: 1rem;
+    grid-template-columns: 1fr;    
 }
 
 main{ 
-
+    row-gap: 2rem;
+    column-gap: 0;
+    margin-block: 1rem;
+    
     .grid {
         grid-template-columns: 1fr;  
-      }
+    }
 
     #featured{
         display: flex;
@@ -61,6 +65,7 @@ main{
             width: 100%;
              
         }
+
         & div {
             display: flex;
             flex-direction: column;  
@@ -73,4 +78,35 @@ main{
             }
         }
     }
+}
+
+#ai{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column; 
+    justify-content: center; 
+
+    article{
+        position: relative; 
+        display: grid;
+        grid-template-columns: 25% 72%;
+    }
+
+    article div:first-child {   
+       grid-column: 2;
+    } 
+
+    article div:last-child {
+        grid-column: 1;
+        img {   
+            width: 100%; 
+            min-width: 80px;
+            min-height: 80px;
+            max-width: 120px;
+            max-height: 120px;
+        }
+    }
+}
+
+aside{ 
 }

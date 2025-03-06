@@ -41,16 +41,36 @@ section header{
     text-overflow: ellipsis;       /* Coloca ... no limite desejado */
 }
 
+#ai{
+    position: relative;
+}
+
+#ai h3 {
+    display: -webkit-box;          
+    -webkit-line-clamp: 2;        
+    -webkit-box-orient: vertical;  
+    overflow: hidden;              
+    text-overflow: ellipsis;        
+}
+
+#ai p {
+    display: -webkit-box;         
+    -webkit-line-clamp: 4;         
+    -webkit-box-orient: vertical;  
+    overflow: hidden;              
+    text-overflow: ellipsis;        
+}
+
 figure{
     position: relative;
 }
 
 figure p {
-    display: -webkit-box;         /* Usando flexbox para limitar linhas */
-    -webkit-line-clamp: 2;        /* Limita o texto a quantidade de linhas posta */
+    display: -webkit-box;          
+    -webkit-line-clamp: 2;         
     -webkit-box-orient: vertical;  
     overflow: hidden;              
-    text-overflow: ellipsis;       /* Coloca ... no limite desejado */
+    text-overflow: ellipsis;        
 }
 
 .card{
