@@ -41,6 +41,18 @@ section header{
     text-overflow: ellipsis;       /* Coloca ... no limite desejado */
 }
 
+aside{
+    position: relative;
+}
+
+aside h3 {
+    display: -webkit-box;          
+    -webkit-line-clamp: 2;         
+    -webkit-box-orient: vertical;  
+    overflow: hidden;              
+    text-overflow: ellipsis;        
+}
+
 #ai{
     position: relative;
 }

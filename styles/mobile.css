@@ -32,6 +32,12 @@ main{
     column-gap: 0;
     margin-block: 1rem;
     
+    grid-template-areas: 
+    "featured"
+    "weekly"
+    "ai"
+    "aside";
+
     .grid {
         grid-template-columns: 1fr;  
     }
@@ -108,5 +114,24 @@ main{
     }
 }
 
-aside{ 
+aside{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column; 
+    justify-content: center; 
+    padding-bottom: 40px;
+
+    article{
+        position: relative; 
+        display: grid;
+        grid-template-columns: 25% 72%;
+    }
+
+    article div:first-child {  
+       img {   
+            width: 100%; 
+            min-width: 72px;
+            min-height: 72px; 
+        }
+    }    
 }
